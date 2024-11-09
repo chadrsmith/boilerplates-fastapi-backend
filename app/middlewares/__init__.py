@@ -1,0 +1,1 @@
+from .cors import set_app_cors_middleware

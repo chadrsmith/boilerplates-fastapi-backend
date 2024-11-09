@@ -1,0 +1,54 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment directories (common ones)
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# pytest cache
+.pytest_cache/
+
+# Test and coverage reports
+*.coveragerc
+.coverage
+*.coverage.*
+nosetests.xml
+coverage.xml
+*.hypothesis/
+
+# VSCode settings (if using VSCode)
+.vscode/
+
+# PyCharm settings (if using PyCharm)
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker related files
+*.dockerfile
+.docker/
+
+# Other IDE or editor-specific files
+*.swp
+*.swo
+*~
+
+# FastAPI specific, if using default server logs
+*.log
+
+# Environment variable files
+.env
+.env.* # If you use multiple .env files for different environments
+
+# Miscellaneous files
+*.bak
+*.tmp

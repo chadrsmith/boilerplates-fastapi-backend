@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "fastapi-backend"
+version = "0.1.0"
+description = "Boilerplate for a fastAPI project. Includes basic project structure and examples for connecting to DB"
+authors = ["Chad Smith <chadsmith146@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.scripts]
+"start" = "app:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.4"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+coverage = "^7.6.4"
+mypy = "^1.13.0"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 110
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.plugins.dotenv]
+ignore = "false"
+location = ".env"
+
